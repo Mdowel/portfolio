@@ -179,7 +179,7 @@ p {
 
 @media(max-width: 900px) {
     p { 
-        max-width: var(--container-small-width);
+        max-width: var(--container-large-width);
     }
 }
 
@@ -193,6 +193,7 @@ a {
     font-family: 'Jost', sans-serif;
     transition: all .2s;
     outline: 2px solid transparent;
+    text-shadow: 0px 0px 20px #454545;
 }
 
 ::-moz-focus-inner {
@@ -249,6 +250,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink {
     background: var(--pink);
     transition: all 0.2s;
+
 }
 
 .btn--pink::after {
@@ -404,8 +406,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .8)), 
+        url('./images/IMG_1484.jpeg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -506,32 +508,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
-
-/* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
 
@@ -569,6 +545,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+    transform: translateY(-1.5em);
+}
+
+.contact__info > a {
+    transform: translateY(1em);
 }
 
 /* --------------------------------------- */
