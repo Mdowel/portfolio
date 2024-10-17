@@ -581,11 +581,15 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
 }
 
-.footer__github-buttons iframe {
+.footer__p {
+    font-size: 1.25rem;
+}
+
+/* .footer__github-buttons iframe {
     height: 2.5rem;
     width: 84px;
     transform: translateY(3px);
-}
+} */
 
 @media(max-width: 500px) {
     .footer {
